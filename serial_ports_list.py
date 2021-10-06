@@ -1,6 +1,6 @@
 import serial
 import serial.tools.list_ports
 
-ports = list(serial.tools.list_ports.comports())
-for p in ports:
-    print(p.description)
+list_ports = list(serial.tools.list_ports.comports())
+for port in list_ports:
+    print(port.description)
